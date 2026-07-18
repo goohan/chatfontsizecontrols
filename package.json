@@ -2,7 +2,7 @@
   "name": "chatfontsizecontrols",
   "displayName": "Chat Font Size Controls",
   "description": "Quickly increase, decrease, or reset AI chat and code block font sizes in sync.",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "goohan",
   "license": "MIT",
   "icon": "assets/icon.png",
@@ -70,19 +70,19 @@
       "properties": {
         "chatFontSizeControls.minimum": {
           "type": "number",
-          "default": 12,
+          "default": 10,
           "minimum": 1,
           "description": "Minimum Markdown font size allowed by the decrease command."
         },
         "chatFontSizeControls.maximum": {
           "type": "number",
-          "default": 16,
+          "default": 20,
           "minimum": 1,
           "description": "Maximum Markdown font size allowed by the increase command."
         },
         "chatFontSizeControls.step": {
           "type": "number",
-          "default": 0.5,
+          "default": 1,
           "exclusiveMinimum": 0,
           "description": "Amount added or subtracted by each command."
         },

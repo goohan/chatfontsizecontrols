@@ -28,9 +28,9 @@ The commands are also available from the Command Palette under **Chat Font Size*
 
 The initial configuration reproduces VS Code's usual one-pixel relationship between chat text and chat code blocks:
 
-- Minimum chat size: `12`
-- Maximum chat size: `16`
-- Step: `0.5`
+- Minimum chat size: `10`
+- Maximum chat size: `20`
+- Step: `1`
 - Reset chat size: `13`
 - Code block offset: `1` (reset code block size: `14`)
 
@@ -38,9 +38,9 @@ The initial configuration reproduces VS Code's usual one-pixel relationship betw
 
 | Setting | Default | Description |
 | --- | ---: | --- |
-| `chatFontSizeControls.minimum` | `12` | Hard lower limit for chat Markdown text. |
-| `chatFontSizeControls.maximum` | `16` | Hard upper limit for chat Markdown text. |
-| `chatFontSizeControls.step` | `0.5` | Amount added or subtracted per command. |
+| `chatFontSizeControls.minimum` | `10` | Hard lower limit for chat Markdown text. |
+| `chatFontSizeControls.maximum` | `20` | Hard upper limit for chat Markdown text. |
+| `chatFontSizeControls.step` | `1` | Amount added or subtracted per command. |
 | `chatFontSizeControls.resetValue` | `13` | Chat Markdown size used by Reset. |
 | `chatFontSizeControls.codeBlockOffset` | `1` | Amount added to the chat size for code blocks. |
 

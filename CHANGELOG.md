@@ -2,6 +2,11 @@
 
 All notable changes to this extension are documented in this file.
 
+## 0.0.4
+
+- Expand the default chat font size range from `12–16` to `10–20`.
+- Change the default adjustment step from `0.5` to `1`.
+
 ## 0.0.3
 
 - Replace the Marketplace icon with a smooth, high-resolution zoom illustration.

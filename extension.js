@@ -36,9 +36,9 @@ async function applyFontSize(action) {
   const chat = vscode.workspace.getConfiguration('chat');
   const resetValue = controls.get('resetValue', 13);
   const sizes = calculateFontSizes(chat.get('fontSize', resetValue), action, {
-    minimum: controls.get('minimum', 12),
-    maximum: controls.get('maximum', 16),
-    step: controls.get('step', 0.5),
+    minimum: controls.get('minimum', 10),
+    maximum: controls.get('maximum', 20),
+    step: controls.get('step', 1),
     resetValue,
     codeBlockOffset: controls.get('codeBlockOffset', 1)
   });

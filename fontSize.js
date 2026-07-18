@@ -7,11 +7,11 @@ const ACTIONS = Object.freeze({
 });
 
 function calculateFontSizes(currentValue, action, options = {}) {
-  const minimum = toFiniteNumber(options.minimum, 12);
-  const maximum = toFiniteNumber(options.maximum, 16);
+  const minimum = toFiniteNumber(options.minimum, 10);
+  const maximum = toFiniteNumber(options.maximum, 20);
   const lowerBound = Math.min(minimum, maximum);
   const upperBound = Math.max(minimum, maximum);
-  const step = Math.max(toFiniteNumber(options.step, 0.5), Number.EPSILON);
+  const step = Math.max(toFiniteNumber(options.step, 1), Number.EPSILON);
   const resetValue = toFiniteNumber(options.resetValue, 13);
   const codeBlockOffset = toFiniteNumber(options.codeBlockOffset, 1);
   const current = clamp(toFiniteNumber(currentValue, resetValue), lowerBound, upperBound);
