@@ -1,0 +1,115 @@
+{
+  "name": "chatfontsizecontrols",
+  "displayName": "Chat Font Size Controls",
+  "description": "Quickly increase, decrease, or reset AI chat and code block font sizes in sync.",
+  "version": "0.0.1",
+  "publisher": "goohan",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "chat",
+    "font size",
+    "zoom",
+    "accessibility",
+    "copilot",
+    "ai"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goohan/chatfontsizecontrols.git"
+  },
+  "bugs": {
+    "url": "https://github.com/goohan/chatfontsizecontrols/issues"
+  },
+  "homepage": "https://github.com/goohan/chatfontsizecontrols#readme",
+  "main": "./extension.js",
+  "activationEvents": [],
+  "contributes": {
+    "commands": [
+      {
+        "command": "chatfontsizecontrols.increase",
+        "title": "Increase Chat Font Size",
+        "category": "Chat Font Size"
+      },
+      {
+        "command": "chatfontsizecontrols.decrease",
+        "title": "Decrease Chat Font Size",
+        "category": "Chat Font Size"
+      },
+      {
+        "command": "chatfontsizecontrols.reset",
+        "title": "Reset Chat Font Size",
+        "category": "Chat Font Size"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "chatfontsizecontrols.increase",
+        "key": "ctrl+alt+numpad_add",
+        "mac": "cmd+alt+numpad_add"
+      },
+      {
+        "command": "chatfontsizecontrols.decrease",
+        "key": "ctrl+alt+numpad_subtract",
+        "mac": "cmd+alt+numpad_subtract"
+      },
+      {
+        "command": "chatfontsizecontrols.reset",
+        "key": "ctrl+alt+numpad_multiply",
+        "mac": "cmd+alt+numpad_multiply"
+      }
+    ],
+    "configuration": {
+      "title": "Chat Font Size Controls",
+      "properties": {
+        "chatFontSizeControls.minimum": {
+          "type": "number",
+          "default": 12,
+          "minimum": 1,
+          "description": "Minimum Markdown font size allowed by the decrease command."
+        },
+        "chatFontSizeControls.maximum": {
+          "type": "number",
+          "default": 16,
+          "minimum": 1,
+          "description": "Maximum Markdown font size allowed by the increase command."
+        },
+        "chatFontSizeControls.step": {
+          "type": "number",
+          "default": 0.5,
+          "exclusiveMinimum": 0,
+          "description": "Amount added or subtracted by each command."
+        },
+        "chatFontSizeControls.resetValue": {
+          "type": "number",
+          "default": 13,
+          "minimum": 1,
+          "description": "Markdown font size applied by the reset command."
+        },
+        "chatFontSizeControls.codeBlockOffset": {
+          "type": "number",
+          "default": 1,
+          "description": "Value added to the Markdown font size for chat code blocks."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "node --test",
+    "check": "npm run lint && npm test",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.31.0",
+    "@vscode/vsce": "^3.6.0",
+    "eslint": "^9.31.0",
+    "globals": "^16.3.0"
+  }
+}
