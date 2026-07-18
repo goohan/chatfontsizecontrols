@@ -2,7 +2,7 @@
   "name": "chatfontsizecontrols",
   "displayName": "Chat Font Size Controls",
   "description": "Quickly increase, decrease, or reset AI chat and code block font sizes in sync.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "goohan",
   "license": "MIT",
   "icon": "assets/icon.png",

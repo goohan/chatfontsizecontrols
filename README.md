@@ -146,3 +146,7 @@ Updates are queued inside the VS Code extension host. This avoids spawning a ter
 ## License
 
 [MIT](LICENSE.md)
+
+## Credits
+
+The icon for this extension is based on the Flaticon library: [Zoom icons created by Magnific - Flaticon](https://www.flaticon.com/free-icons/zoom)
