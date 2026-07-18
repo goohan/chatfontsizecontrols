@@ -4,9 +4,9 @@ const vscode = require('vscode');
 const { ACTIONS, calculateFontSizes } = require('./fontSize');
 
 const COMMANDS = Object.freeze({
-  increase: 'chatfontsizecontrols.increase',
-  decrease: 'chatfontsizecontrols.decrease',
-  reset: 'chatfontsizecontrols.reset'
+  increase: 'chatzoomcontrols.increase',
+  decrease: 'chatzoomcontrols.decrease',
+  reset: 'chatzoomcontrols.reset'
 });
 
 function activate(context) {
@@ -18,7 +18,7 @@ function activate(context) {
       .then(() => applyFontSize(action))
       .catch((error) => {
         const message = error instanceof Error ? error.message : String(error);
-        vscode.window.showErrorMessage(`Unable to change chat font size: ${message}`);
+        vscode.window.showErrorMessage(`Unable to change chat zoom: ${message}`);
       });
 
     return updateQueue;
@@ -32,7 +32,7 @@ function activate(context) {
 }
 
 async function applyFontSize(action) {
-  const controls = vscode.workspace.getConfiguration('chatFontSizeControls');
+  const controls = vscode.workspace.getConfiguration('chatZoomControls');
   const chat = vscode.workspace.getConfiguration('chat');
   const resetValue = controls.get('resetValue', 13);
   const sizes = calculateFontSizes(chat.get('fontSize', resetValue), action, {
@@ -47,7 +47,7 @@ async function applyFontSize(action) {
   await chat.update('editor.fontSize', sizes.codeBlockFontSize, vscode.ConfigurationTarget.Global);
 
   vscode.window.setStatusBarMessage(
-    `Chat font: ${sizes.chatFontSize} | Code blocks: ${sizes.codeBlockFontSize}`,
+    `Chat zoom: ${sizes.chatFontSize} | Code blocks: ${sizes.codeBlockFontSize}`,
     1500
   );
 }

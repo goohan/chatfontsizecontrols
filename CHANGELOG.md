@@ -2,6 +2,11 @@
 
 All notable changes to this extension are documented in this file.
 
+## 0.0.5
+
+- Rename the product to **Chat Zoom Controls**.
+- Rename commands, configuration keys, package metadata, and repository URLs to the `chatzoomcontrols` identity.
+
 ## 0.0.4
 
 - Expand the default chat font size range from `12–16` to `10–20`.

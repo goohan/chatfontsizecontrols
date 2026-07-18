@@ -1,6 +1,6 @@
 # Métodos alternativos e históricos
 
-Este documento conserva las dos soluciones que precedieron a **Chat Font Size Controls**. Son alternativas útiles para experimentar o para controlar el tamaño del chat sin instalar esta extensión, pero no son los métodos recomendados para el uso diario.
+Este documento conserva las dos soluciones que precedieron a **Chat Zoom Controls**. Son alternativas útiles para experimentar o para controlar el tamaño del chat sin instalar esta extensión, pero no son los métodos recomendados para el uso diario.
 
 Los ejemplos mantienen la configuración que dio origen a la extensión:
 
@@ -13,7 +13,7 @@ Los ejemplos mantienen la configuración que dio origen a la extensión:
 - Disminuir: `Ctrl+Alt+Numpad -`
 - Restablecer: `Ctrl+Alt+Numpad *`
 
-> **Importante:** usa solamente uno de estos métodos a la vez. Si **Chat Font Size Controls** está instalada y habilitada, sus atajos predeterminados entrarán en conflicto con los ejemplos de este documento.
+> **Importante:** usa solamente uno de estos métodos a la vez. Si **Chat Zoom Controls** está instalada y habilitada, sus atajos predeterminados entrarán en conflicto con los ejemplos de este documento.
 
 ## Método 1: Settings Cycler
 
@@ -114,7 +114,7 @@ El segundo enfoque lee el valor actual de `chat.fontSize`, calcula el siguiente 
 
 Este ejemplo está pensado para **Windows y la edición estable de VS Code**. Antes de usarlo:
 
-1. Deshabilita **Chat Font Size Controls** y Settings Cycler para evitar conflictos.
+1. Deshabilita **Chat Zoom Controls** y Settings Cycler para evitar conflictos.
 2. Elimina cualquier bloque anterior de `settings.cycle` que contenga `chat.fontSize`.
 3. Verifica que `settings.json` contenga exactamente una aparición de cada ajuste:
 
@@ -306,7 +306,7 @@ Agrega lo siguiente a `keybindings.json`:
 
 ## Por qué se creó esta extensión
 
-**Chat Font Size Controls** conserva el cálculo basado en el valor actual del script, pero usa directamente la API de configuración de VS Code:
+**Chat Zoom Controls** conserva el cálculo basado en el valor actual del script, pero usa directamente la API de configuración de VS Code:
 
 - No analiza ni reescribe `settings.json` manualmente.
 - No inicia procesos externos ni tareas.

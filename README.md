@@ -1,6 +1,6 @@
-# Chat Font Size Controls
+# Chat Zoom Controls
 
-Quickly increase, decrease, or reset the font size used by AI chat views in Visual Studio Code. The extension updates regular Markdown responses and code blocks together while keeping their sizes synchronized.
+Quickly increase, decrease, or reset the zoom level used by AI chat views in Visual Studio Code. The extension adjusts the font sizes of regular Markdown responses and code blocks together while keeping them synchronized.
 
 It uses the built-in `chat.fontSize` and `chat.editor.fontSize` settings, so it works with VS Code chat experiences that honor those settings, including GitHub Copilot Chat and compatible AI chat extensions.
 
@@ -22,7 +22,7 @@ It uses the built-in `chat.fontSize` and `chat.editor.fontSize` settings, so it 
 | Decrease | `Ctrl+Alt+Numpad -` | `Cmd+Alt+Numpad -` |
 | Reset | `Ctrl+Alt+Numpad *` | `Cmd+Alt+Numpad *` |
 
-The commands are also available from the Command Palette under **Chat Font Size**. You can replace the default shortcuts in **Preferences: Open Keyboard Shortcuts**.
+The commands are also available from the Command Palette under **Chat Zoom**. You can replace the default shortcuts in **Preferences: Open Keyboard Shortcuts**.
 
 ## Defaults
 
@@ -38,21 +38,21 @@ The initial configuration reproduces VS Code's usual one-pixel relationship betw
 
 | Setting | Default | Description |
 | --- | ---: | --- |
-| `chatFontSizeControls.minimum` | `10` | Hard lower limit for chat Markdown text. |
-| `chatFontSizeControls.maximum` | `20` | Hard upper limit for chat Markdown text. |
-| `chatFontSizeControls.step` | `1` | Amount added or subtracted per command. |
-| `chatFontSizeControls.resetValue` | `13` | Chat Markdown size used by Reset. |
-| `chatFontSizeControls.codeBlockOffset` | `1` | Amount added to the chat size for code blocks. |
+| `chatZoomControls.minimum` | `10` | Hard lower limit for chat Markdown text. |
+| `chatZoomControls.maximum` | `20` | Hard upper limit for chat Markdown text. |
+| `chatZoomControls.step` | `1` | Amount added or subtracted per command. |
+| `chatZoomControls.resetValue` | `13` | Chat Markdown size used by Reset. |
+| `chatZoomControls.codeBlockOffset` | `1` | Amount added to the chat size for code blocks. |
 
 Example:
 
 ```json
 {
-  "chatFontSizeControls.minimum": 11,
-  "chatFontSizeControls.maximum": 18,
-  "chatFontSizeControls.step": 0.5,
-  "chatFontSizeControls.resetValue": 13,
-  "chatFontSizeControls.codeBlockOffset": 1
+   "chatZoomControls.minimum": 11,
+   "chatZoomControls.maximum": 18,
+   "chatZoomControls.step": 0.5,
+   "chatZoomControls.resetValue": 13,
+   "chatZoomControls.codeBlockOffset": 1
 }
 ```
 
@@ -60,10 +60,10 @@ Example:
 
 ### Visual Studio Marketplace
 
-Install [Chat Font Size Controls](https://marketplace.visualstudio.com/items?itemName=goohan.chatfontsizecontrols) from the Extensions view in VS Code or run:
+Install [Chat Zoom Controls](https://marketplace.visualstudio.com/items?itemName=goohan.chatzoomcontrols) from the Extensions view in VS Code or run:
 
 ```powershell
-code --install-extension goohan.chatfontsizecontrols
+code --install-extension goohan.chatzoomcontrols
 ```
 
 ### Install a packaged VSIX
@@ -71,7 +71,7 @@ code --install-extension goohan.chatfontsizecontrols
 Download a `.vsix` file from the repository releases and run:
 
 ```powershell
-code --install-extension .\chatfontsizecontrols-<version>.vsix
+code --install-extension .\chatzoomcontrols-<version>.vsix
 ```
 
 Then run **Developer: Reload Window** if VS Code asks you to reload.
@@ -81,8 +81,8 @@ Then run **Developer: Reload Window** if VS Code asks you to reload.
 The extension has no runtime dependencies or build step. Download or clone this repository, then copy its contents to a folder such as:
 
 ```text
-Windows: %USERPROFILE%\.vscode\extensions\goohan.chatfontsizecontrols-<version>
-macOS/Linux: ~/.vscode/extensions/goohan.chatfontsizecontrols-<version>
+Windows: %USERPROFILE%\.vscode\extensions\goohan.chatzoomcontrols-<version>
+macOS/Linux: ~/.vscode/extensions/goohan.chatzoomcontrols-<version>
 ```
 
 Make sure `package.json` and `extension.js` are directly inside that folder, then run **Developer: Reload Window**.
@@ -102,7 +102,7 @@ npm run check
 npm run package
 ```
 
-Press `F5` in VS Code to launch an Extension Development Host. Use the three **Chat Font Size** commands there to test changes.
+Press `F5` in VS Code to launch an Extension Development Host. Use the three **Chat Zoom** commands there to test changes.
 
 ## Publishing to the Marketplace
 
