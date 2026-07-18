@@ -60,7 +60,7 @@ Example:
 
 ### Visual Studio Marketplace
 
-Once published, install **Chat Font Size Controls** from the Extensions view in VS Code or run:
+Install [Chat Font Size Controls](https://marketplace.visualstudio.com/items?itemName=goohan.chatfontsizecontrols) from the Extensions view in VS Code or run:
 
 ```powershell
 code --install-extension goohan.chatfontsizecontrols
