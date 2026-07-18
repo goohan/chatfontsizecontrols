@@ -143,6 +143,10 @@ Updates are queued inside the VS Code extension host. This avoids spawning a ter
 - VS Code does not currently expose chat-specific mouse-wheel zoom, so this extension provides commands and keyboard shortcuts instead.
 - A chat extension must honor VS Code's `chat.fontSize` or `chat.editor.fontSize` settings for the change to be visible.
 
+## Alternative and historical approaches
+
+See [Métodos alternativos e históricos](docs/metodos-alternativos.md) for a Spanish-language guide to the earlier Settings Cycler and PowerShell solutions, including their tradeoffs and complete configuration examples.
+
 ## License
 
 [MIT](LICENSE.md)
