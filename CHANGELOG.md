@@ -2,6 +2,10 @@
 
 All notable changes to this extension are documented in this file.
 
+## 0.0.6
+
+- Add an animated demonstration of the chat zoom controls to the Marketplace profile.
+
 ## 0.0.5
 
 - Rename the product to **Chat Zoom Controls**.

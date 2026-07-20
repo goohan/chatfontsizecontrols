@@ -2,7 +2,7 @@
   "name": "chatzoomcontrols",
   "displayName": "Chat Zoom Controls",
   "description": "Quickly zoom AI chat text and code blocks by adjusting their font sizes in sync.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "publisher": "goohan",
   "license": "MIT",
   "icon": "assets/icon.png",

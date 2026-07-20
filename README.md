@@ -4,6 +4,8 @@ Quickly increase, decrease, or reset the zoom level used by AI chat views in Vis
 
 It uses the built-in `chat.fontSize` and `chat.editor.fontSize` settings, so it works with VS Code chat experiences that honor those settings, including GitHub Copilot Chat and compatible AI chat extensions.
 
+![Chat Zoom Controls increasing, decreasing, and resetting the AI chat font size](assets/screenshot-chat-zoom.gif)
+
 ## Features
 
 - Increase or decrease from the current effective chat font size.
