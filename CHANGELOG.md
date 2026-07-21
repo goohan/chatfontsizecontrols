@@ -2,6 +2,10 @@
 
 All notable changes to this extension are documented in this file.
 
+## 0.0.8
+
+- Refresh the animated demonstration shown on the Marketplace profile.
+
 ## 0.0.7
 
 - Update the animated demonstration shown on the Marketplace profile.
